@@ -4,6 +4,7 @@ import ChatList from './chatList';
 import Chat from './chat';
 import FocusedElement from './focusedElement';
 import Posts from './posts';
+import SearchBar from './searchBar';
 import { categories, people, conversations, posts, peopleBio } from './data';
 
 const DashBoardWrapper = styled.div`
@@ -51,7 +52,8 @@ renderBody = () => {
       <DashBoardWrapper>
         <ChatList people={people} categories={categories} active={active} changeFocus={this.changeFocus} />
         <BodyWrapper>
-          {/* <FocusedElement focus={focus} focusSubject={focusSubject} focusType={focusType} posts={posts} peoplBio={peopleBio} /> */}
+          <SearchBar/>
+          <FocusedElement focus={focus} focusSubject={focusSubject} focusType={focusType} posts={posts} peopleBio={peopleBio} />
           {this.renderBody()}
         </BodyWrapper>
       </DashBoardWrapper>

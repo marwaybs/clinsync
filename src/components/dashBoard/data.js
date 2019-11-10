@@ -1,3 +1,7 @@
+import hand from './../../assets/images/hand.jpeg';
+import help from './../../assets/images/help.jpg';
+import neph from './../../assets/images/neph.jpg';
+import steth from './../../assets/images/steth.jpg';
 
 
 export const categories = [
@@ -17,21 +21,21 @@ export const people = [
 export const peopleBio = [
   {
     name: 'Peach Smith',
-    bio: 'A cardiologist at Hamilton General Hospital',
-    focus: '',
-    pubs: '',
+    bio: 'Dr. Smith is a nephrologist currently working at Rainbowland University Hospital. He completed his fellowship at Hogwarts Medical School with Dr. Dumbledore. ',
+    focus: 'Nephology; Podocyte Function; Focal Segmental Glomerulosclerosis; Genome Analysis',
+    image: neph,
   },
   {
     name:'Sarah Rogers',
-    bio: 'A cardiologist at Hamilton General Hospital',
-    focus: '',
-    pubs: '',
+    bio: 'Dr. Rogers has been a general specialist at Fairyland Hospital for the past 20 years. She is an MD-PhD who has published multiple high-impact papers on the relationship between intersectionality and general health outcomes.',
+    focus: 'Social Determinants of Health; Poverty; Public Health; Global Health Trends',
+    image: steth,
   },
   {
     name: 'Kat Orwell',
     bio: 'A cardiologist at Hamilton General Hospital',
-    focus: '',
-    pubs: '',
+    focus: 'Social Determinants of Health; Poverty; Public Health; Global Health Trends',
+    image: steth,
   },
 ]
 
@@ -66,6 +70,7 @@ export const posts = [
     description: "Hi everyone, please note that there is a strain of Vibrio going around the downtown Toronto area. Please advise all your patients with open wounds to take extra care in sanitation. ", 
     helpful: 7,
     irrelevant: 0,
+    image: hand,
     comments: [
     ]
   },
@@ -74,6 +79,7 @@ export const posts = [
     description: "I have a 21 y.o. female patient with a persistent cough which is unresponsive to amoxicillin. Does anyone have any suggestions for how I should proceed? ",
     helpful: 7,
     irrelevant: 0,
+    image: help,
     comments: [
       {
         user: "Dr. Doe - Internal Medicine",

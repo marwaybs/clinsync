@@ -36,6 +36,7 @@ const FormWrapper = styled.div`
     position: absolute;
     bottom: 15px;
     width: 60em;
+    text-align: center;
   `;
 
 const Input = styled.input`

@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 import { Button, Badge } from '../../../reusable';
 import { accent1, accent2, border } from './../../colors';
-import xray from './../../../assets/images/xray.jpg';
-
-
 
 
 const PostWrapper = styled.div`
@@ -27,8 +24,8 @@ const User = styled.p `
 const Portrait = styled.img``;
 
 const Image = styled.img`
-  height:  30%;
-  width: 30%;
+  max-height: 600px;
+  max-width: 600px;
 
 `;
 
@@ -43,7 +40,7 @@ export default class Post extends Component {
   render() {
     return (
       <PostWrapper>
-        <Image src={xray}/>
+        <Image src={this.props.post.image}/>
         <Description>{this.props.post.description}</Description>
         <Badge backgroundColor={accent1}>{`${this.props.post.helpful} Helpful`}</Badge>
         <Badge backgroundColor={accent2}>{`${this.props.post.irrelevant} Irrelevant`}</Badge>
