@@ -1,0 +1,5 @@
+export const background = '#F1FAEE'
+export const accent1 = '#E63946'
+export const border = '#A8DADC'
+export const accent2 = '#457B9D'
+export const spaceCadet = '#1D3557'
