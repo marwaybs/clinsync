@@ -1,14 +1,24 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 import steth from './../../../assets/images/steth.jpg';
-import { border } from './../../colors';
+import { border, background } from './../../colors';
 
 
 const FocusedUserWrapper = styled.div`
   border: 3px solid ${border};
-  padding: 20px 40px 40px;
+  padding: 15px 30px 30px;
   max-width: 640px;
   display: flex;
+`;
+
+export const VerifiedBadge = styled.span`
+  border-radius: 10%;
+  background-color: green;
+  padding: 5px 10px;
+  color: ${background};
+  margin-right:  10px;
+  font-size: 13px;
+  transition: all 0.2s;
 `;
 
 const Image = styled.img`
@@ -45,6 +55,7 @@ export default class FocusedUser extends Component {
         <Image src={user.image}/>
         <TextWrapper>
           <Name>{user.name}</Name>
+          <VerifiedBadge>Verified</VerifiedBadge>
           <Bio>{user.bio}</Bio>
           <Focus>{user.focus}</Focus>
         </TextWrapper>

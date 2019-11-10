@@ -30,7 +30,9 @@ const YouMessage = styled.p`
   border-radius:  25px;
 `;
 
-const MessageWrapper = styled.div``;
+const MessageWrapper = styled.div`
+  font-size: 13px;
+`;
 
 const FormWrapper = styled.div`
     position: absolute;
