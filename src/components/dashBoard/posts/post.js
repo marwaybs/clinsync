@@ -11,9 +11,12 @@ const PostWrapper = styled.div`
   padding-top: 20px;
   margin: auto;
   text-align: center;
+  text-align: -webkit-center;
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  max-width: 800px;
+  `;
 const CommentWrapper = styled.div``;
 const Comment = styled.p`
   font-size: 13px;
@@ -38,11 +41,12 @@ const Seperator = styled.div`
 
 export default class Post extends Component {
   render() {
-    console.log(this.props.post.comments)
     return (
       <PostWrapper>
         <Image src={xray}/>
         <Description>{this.props.post.description}</Description>
+        <Badge backgroundColor={accent1}>{`${this.props.post.helpful} Helpful`}</Badge>
+        <Badge backgroundColor={accent2}>{`${this.props.post.irrelevant} Irrelevant`}</Badge>
         <Button>Consult</Button>
         {this.props.post.comments.map((comment, key) => (
             <CommentWrapper key={key}>

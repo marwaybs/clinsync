@@ -12,7 +12,6 @@ const FocusedElementWrapper = styled.div`
 export default class FocusedElement extends Component {
   render() {
     const {focus, posts, peopleBio, focusSubject, focusType} = this.props;
-    console.log('peopleBio', peopleBio);
     const determineFocus = () => {
       if (focusType === "person"){
         return <FocusedUser user={peopleBio[focusSubject]}/>

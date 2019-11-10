@@ -1,7 +1,9 @@
+
+
 export const categories = [
   'General Chat', 
   'Cardiology', 
-  'Psychiatry',
+  'Psychology',
   'Nephrology',
   'Infectious Disease',
 ]
@@ -62,25 +64,16 @@ export const posts = [
   {
     user: 'Dr.Beam',
     description: "Hi everyone, please note that there is a strain of Vibrio going around the downtown Toronto area. Please advise all your patients with open wounds to take extra care in sanitation. ", 
-    // [TWO PEOPLE LIKED THIS POST]
+    helpful: 7,
+    irrelevant: 0,
     comments: [
-      {
-        user: "Doctor1",
-        text: "Looks like a chest",
-        helpful: 2,
-        irrelevant: 0,
-      },
-      {
-        user: "Doctor2",
-        text: "I agree",
-        helpful: 2,
-        irrelevant: 0,
-      }
     ]
   },
   {
     user: 'Dr. John - General Practitioner',
     description: "I have a 21 y.o. female patient with a persistent cough which is unresponsive to amoxicillin. Does anyone have any suggestions for how I should proceed? ",
+    helpful: 7,
+    irrelevant: 0,
     comments: [
       {
         user: "Dr. Doe - Internal Medicine",

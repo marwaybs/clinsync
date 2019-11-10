@@ -24,7 +24,6 @@ const TextWrapper = styled.span`
 
 export default class FocusedUser extends Component {
   render() {
-    console.log("focused user");
     return (
       <FocusedUserWrapper>
         <Image src={steth}/>
