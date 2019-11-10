@@ -21,7 +21,7 @@ export const people = [
 export const peopleBio = [
   {
     name: 'Peach Smith',
-    bio: 'Dr. Smith is a nephrologist currently working at Rainbowland University Hospital. He completed his fellowship at Hogwarts Medical School with Dr. Dumbledore. ',
+    bio: 'Dr. Smith is a nephrologist currently working at Rainbowland University Hospital. She completed her fellowship at Hogwarts Medical School with Dr. Dumbledore. ',
     focus: 'Nephology; Podocyte Function; Focal Segmental Glomerulosclerosis; Genome Analysis',
     image: neph,
   },
