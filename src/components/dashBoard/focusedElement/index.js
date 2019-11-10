@@ -8,6 +8,7 @@ import Posts from './../posts';
 
 const FocusedElementWrapper = styled.div`
   padding-top: 20px;
+  text-align: -webkit-center;
 `;
 
 export default class FocusedElement extends Component {
